@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Receptek böngészése</h2>
+    <h2 class="text-warning">Receptek böngészése</h2>
     <ul class="list-group">
       <li v-for="recept in receptek" :key="recept.id" class="list-group-item d-flex justify-content-between">
         {{ recept.nev }}

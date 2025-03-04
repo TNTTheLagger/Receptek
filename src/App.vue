@@ -11,10 +11,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link" @click.prevent="currentView = 'uj'">Új recept hozzáadása</a>
+              <a href="#" class="text-warning nav-link" @click.prevent="currentView = 'uj'">Új recept hozzáadása</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link" @click.prevent="currentView = 'bongeszes'">Receptek böngészése</a>
+              <a href="#" class="text-warning nav-link" @click.prevent="currentView = 'bongeszes'">Receptek böngészése</a>
             </li>
           </ul>
         </div>
@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import Uj from "./Components/Uj.vue";
-import Bongeszes from "./Components/Bongeszes.vue";
+import Uj from "./components/Uj.vue";
+import Bongeszes from "./components/Bongeszes.vue";
 
 export default {
   name: "App",
@@ -45,3 +45,9 @@ export default {
   }
 };
 </script>
+
+<style>
+  body{
+    background-color: rgb(88, 88, 88);
+  }
+</style>
